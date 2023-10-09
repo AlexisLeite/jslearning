@@ -40,8 +40,9 @@ export default function List() {
       <li>Eduardo</li>
       <li>Pedro</li>
       <li>Fernanda</li>
+
     </ul>
-    {/* current significa "el elemento actual" */}
+
     <ul>
       {usuarios.map(current =>
         <li key={current.name}>{current.name}</li>

@@ -1,4 +1,5 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
+import './styles.css'
 
 /**
  * EJERCICIO:
