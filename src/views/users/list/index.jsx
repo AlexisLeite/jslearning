@@ -1,104 +1,89 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
-
-alert('Ojo: EL TUTI construyendo app :D');
-
-/**
- * EJERCICIO:1
- *
- * Entender lo que está pasando acá y lograr hacer lo mismo. Actualmente la función List que está más abajo está siendo exportada como default (dice: export default function List).
- *
- * Para poder hacer el ejercicio, deberíamos quitar las palabras clave export default y crear una nueva función
- * con la sintaxis export default ListTuti como la que se muestra a continuación:
- *
- * export default ListTuti() {
- *   ...Contenido de la vista que vos tenés que renderizar
- * }
- *
- * En esta función, deberías primero lograr que se muestren los usuarios como hicimos al principio. Para ello
- * tu función debe retornar un contenido:
- *
- * export default ListTuti() {
- *   return <Box>Hola mundo</Box>
- * }
- *
- * Esta es la forma más elemental de retornar un contenido, solamente un Hola mundo. Mirando la función que yo hice,
- * deberías poder ir copiando de a una parte, hasta lograr mostrar nuevamente la lista.
- */
-
-// Esto es un array de usuarios
-/**
- * Un array está compuesto por muchos elementos, cada uno de algún tipo en específico. En este caso, cada elemento
- * es de la forma { name: string }, esto quiere decir que cada uno de los elementos de nuestra lista contiene un
- * objeto que a su vez contiene una propiedad name que es de tipo string: cadena de caracteres.
- */
-
-const usuarios = [
-  { name: 'Alexis', age: 32, Phone: 323145 },
-  { name: 'Jorge', age: 55, Phone: 213659 },
-  { name: 'Fernanda', age: 28, Phone: 259874 },
-  { name: 'Joaquin', age: 39, Phone: 46987 },
-  { name: 'Augusto', age: 22, Phone: 74568 },
-];
-
-const Paises = [
-  { Pais: 'Uruguay', Capital: 'Montevideo', habitantes: '4.000.000' },
-  { Pais: 'Argentina', Capital: 'Buenos Aires', habitantes: '40.000.000' },
-  { Pais: 'Peru', Capital: 'Lima', habitantes: '20.000.000' },
-  { Pais: 'Brasil', Capital: 'Brasilia', habitantes: '200.000.000' },
-  { Pais: 'Bolivia', Capital: 'La Paz', habitantes: '10.000.000' },
-];
-
-const Celulares = [
-  { marca: 'Motrola', modelo: 'J345', precio: '$5.000' },
-  { marca: 'Samnsung', modelo: 'S520', precio: '$4.500' },
-  { marca: 'Iphone', modelo: '11200', precio: '$54.000' },
-  { marca: 'Samsung', modelo: 'Z52', precio: '$8.000' },
-  { marca: 'Motrola', modelo: '5d23', precio: '$7.000' },
-];
-
-// Mock data "Datos de prueba", sirve para poder trabajar
-// sin preocuparnos por cómo obtener la información
+import './styles.css';
+import { ListadoPaisesAsLi, ListadoPaisesAsTable } from './ListadoPaises';
+import { ListadoUsuarios, ListadoUsuariosButtons } from './listadoUsuarios';
+import { ListadoCelulares } from './ListadoCelulares';
 
 /**
- * Arrow functions
- *
- * En javascript la sintaxis () => { ... } es un arrow function. Esto es: una función anónima que se crea en el
- * momento en que es declarada para poder utilizarla.
- *
- * En el caso de <Button onClick={() => { ... }} lo que estamos diciendo es que se llame a esa función cuando
- * el usuario haga click en el botón.
- */
+ * TAREAS PENDIENTES
+ * 
 
-// ul - Unordered list "Lista desordenada", es así porque en vez de números pone viñetas.
-// ol - Ordered list "Lista ordenada", pone números
+# Listas
+ 
+Crear una lista de perros con el nombre de su dueño, edad, color, raza y actividades favoritas.
+Crear una lista de juegos de mesa con nombre, descripción, edad para jugar, cantidad de jugadores.
+
+Cada lista deberá tener su cabezal correspondiente indicando de qué es la lista y una descripción.
+
+Investigar en internet cómo podemos hacer para dar estilos a la aplicación, cambiar colores, espaciados. Buscar una lista en internet que te guste e intentar hacer que los estilos se parezcan a los de la lista. Deberá proveer de una imágen de cómo querés que queden tus listados y los estilos hechos para que quede lindo.
+
+# Cabezales y textos
+
+Tenemos el elemento <Heading as="h1"> que fue el usado en el ejercicio, pero también podemos usar elementos de tipo <Heading as="h2"> <Heading as="h3"> <Heading as="h4">. Realizar un documento de mínimo 15 párrafos con al menos 4 tipos distintos de heading que explique algún tema que te guste. El contenido puede ser sacado de internet pero la estructura html tenés que hacerla vos. 
+
+Aplicar estilos necesarios para que quede bonito, buscar en internet cómo hacer para que los espaciados queden bien.
+
+# Estilos
+
+Hay 3 formas al menos de dar estilos a los elementos: Usando la propiedad style, usando la propiedad sx o usando el archivo styles.css. Encontrar la diferencia entre las distintas dinámicas. Averiguar en internet qué es sx y para qué se usa. **** En qué se diferencian sx de style !!!MUY IMPORTANTE ****
+
+Unificar todos los estilos en línea dentro del mismo formato, o bien están todos como sx o bien están todos como style. No debe haber mezcolanza.
+
+Qué es padding 
+Qué es margin
+Qué es display flex con gap
+La caja que contiene todas las listas, deberá tener los siguientes estilos:
+- display: flex
+- flex-direction: column
+Investigar por qué, qué cambia poner esto y qué hace cada propiedad. Buscar documentaciones oficiales y cualquier ayuda adicional que parezca conveniente.
+Avergiuar cómo hacer para que cambien los estilos de un elemento cuando se le pasa el mouse por encima, cuando se hace click en él, y cuando recibe el foco.
+Todos los cabezales de todas las listas, deberán implementar estilos personalizados para contemplar estas situaciones. Es decir, cuando yo pase el mouse por encima de un cabezal, deberá cambiar de fondo y color. Lo mismo cuando haga click sobre él.
+
+# Tareas con inputs
+
+El elemento <Input> permite mostrar un campo de texto en el que el usuario puede escribir.
+Mediante la propiedad onChange podemos escuchar los cambios en el input.
+Hacer un formulario con al menos 5 campos de tipo <Input> y en cada uno de ellos poner:
+
+onChange(ev => console.log(ev.target.value))
+
+Abrir la consola del navegador y ver que se están imprimiendo los cambios hechos en los input
+Investigar en internet:
+
+Qué es el onChange de un campo de tipo input en React y cómo podemos manipular sus datos
+
+Formatear todos los inputs dentro de una tabla: CAda input deberá estar en una celda, acompañado de su nombre en una celda contigua. Ejemplo:
+
+| Nombre   | <INPUTDENOMBRE   /> |
+----------------------------------
+| Apellido | <INPUTDEAPELLIDO /> |
+----------------------------------
+| Edad     | <INPUTDEEDAD />     |
+ */
 
 export default function List() {
-  console.log(Paises);
-  console.log(Paises.length);
-  console.log(Paises.map(current => current.Capital + 5));
   return (
     <Box>
-      <Heading as="h1" style={{ color: 'balck' }} bg="grey">
+      <Heading as="h1" style={{ color: 'white', background: 'black' }}>
+        Listado de celulares
+      </Heading>
+      <Text style={{ color: 'black' }} bg="white">
+        Lista de celulares
+      </Text>
+      <ListadoCelulares />
+
+      <Heading as="h1" style={{ color: 'black' }} bg="grey">
         Listado de usuarios
       </Heading>
       <Text style={{ color: 'black' }} bg="gray.400">
         Lista de usuarios
       </Text>
-
-      <ul style={{ backgroundColor: 'cyan', padding: '20px', margin: '0px' }}>
-        {usuarios.map(current => (
-          <li key={current.name}>
-            Nombre <strong style={{ color: 'red' }}>{current.name} </strong> -
-            Edad: <strong style={{ color: 'red' }}>{current.age}</strong> años -
-            Telefono: <strong style={{ color: 'red' }}>{current.Phone}</strong>
-          </li>
-        ))}
-      </ul>
+      <ListadoUsuariosButtons />
+      <ListadoUsuarios />
 
       <Heading as="h1" style={{ color: 'blue' }} bg="green.400">
         Listado de Paises
       </Heading>
-
       <Heading
         as="h2"
         style={{ color: 'blue' }}
@@ -107,37 +92,8 @@ export default function List() {
       >
         Lista de paises capitales y hab.
       </Heading>
-
-      <ul style={{ backgroundColor: 'orange', padding: '20px', margin: '0px' }}>
-        {Paises.map(current => (
-          <li key={current.Pais}>
-            Pais <strong style={{ color: 'blue' }}>{current.Pais}</strong> -
-            Capital :
-            <strong style={{ color: 'blue' }}>{current.Capital}</strong> -
-            Habitantes:
-            <strong style={{ color: 'blue' }}>{current.habitantes}</strong>
-          </li>
-        ))}
-      </ul>
-
-      <Heading as="h1" style={{ color: 'white', background: 'black' }}>
-        Listado de celulares
-      </Heading>
-      <Text style={{ color: 'black' }} bg="white">
-        Lista de celulares
-      </Text>
-
-      <ul style={{ backgroundColor: 'grey', padding: '20px', margin: '0px' }}>
-        {Celulares.map(current => (
-          <li key={current.marca}>
-            Marca: <strong style={{ color: 'orange' }}>{current.marca} </strong>
-            - modelo:
-            <strong style={{ color: 'orange' }}>{current.modelo}</strong> -
-            Precio:
-            <strong style={{ color: 'orange' }}>{current.precio}</strong>
-          </li>
-        ))}
-      </ul>
+      <ListadoPaisesAsTable />
+      <ListadoPaisesAsLi />
     </Box>
   );
 }
