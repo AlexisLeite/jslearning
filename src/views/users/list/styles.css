@@ -1,32 +1,100 @@
 /* Estilos de la lista de usuarios */
 
 body {
-    background: #ccc !important
-  }
+  background: #ccc !important
   
-  #MainContainer {
-    background: white;
-    width: 550px;
-    margin: 24px auto;
-    border: 1px solid #999;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
-    padding: 0
-  }
-  
-  ul {
-    margin-left: 20px
-  }
+}
+
+#MainContainer {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 550px;
+  margin: 24px auto;
+  border: 1px solid #999;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  padding: 0
+}
+
+ul {
+  margin-left: 20px
+}
 
 table {
-  border : 1px solid #999;
+  border: 1px solid #999;
   border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #aaa;
   text-align: center;
 }
 
 #TableWrapper {
   padding: 20px;
+}
+
+/* EStilo Tabla de listado celulares*/
+
+
+table {
+  border: 1px solid #ccc;
+
+  width: 100%;
+}
+
+.th {
+  background-color: lightgray;
+  font-weight: bold;
+}
+
+.td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+/* Estilo lista Perros*/
+#ListadoPerros ul {
+  background-color: aqua;
+  margin-left: 0px;
+  margin-right: 0px;border-bottom:2px solid black ;border-left: 3px solid #222; border-right: 3px solid black;
+  padding: bottom 3px;padding-top: 4%; padding-left: 20px; 
+  }
+ #ListadoPerros h1{color: #333; text-align: center;
+  background-color: #999; border-bottom: 4px solid blue; border-top: 1px solid blue
+
+  
+  ;} 
+ 
+ #ListadoPerros p{ color:black ;text-align: center;background-color: blueviolet; 
+  border-bottom: 2px solid black;}
+
+
+#ListadoPerros ul strong {
+  color: blueviolet; white-space: pre-wrap;
+
+}
+
+  
+/*Estilo listado Paises */
+
+#ListadoPaises h1{ color: blue; background-color:#aaa; border-bottom: 2px solid blue;padding-bottom: ; text-align: center;
+ 
+}
+#ListadoPaises p{ color: black; text-align: center; border-bottom: 2px solid gray; background-color: #999;
+
+}
+
+
+/*Celulares estilo*/
+#ListadoCelulares ul {
+  background-color: grey;
+  padding: 0 20px;
+  margin: 0px;
+  border-bottom: 1px solid white;
+}
+
+#ListadoCelulares ul strong {
+  color: orange;
 }

@@ -1,13 +1,13 @@
 import { Button } from '@chakra-ui/react';
 
-const usuarios = [
+var usuarios = [
   { name: 'Alexis', age: 32, Phone: 323145 },
   { name: 'Jorge', age: 55, Phone: 213659 },
   { name: 'Fernanda', age: 28, Phone: 259874 },
   { name: 'Joaquin', age: 39, Phone: 46987 },
   { name: 'Augusto', age: 22, Phone: 74568 },
 ];
-
+/**Esto son botones */
 export const ListadoUsuariosButtons = () =>
   usuarios.map(current => (
     <Button
