@@ -1,5 +1,11 @@
 # Vamos a hacer una agenda
 
+Temas a tratar
+- Modularización
+- Qué es un componente?
+- Propiedades de los componentes
+- Qué es un evento
+
 Queremos crear una agenda, qué necesitamos?
 
 - Agregar nuevos usuarios a la aplicación
@@ -7,19 +13,25 @@ Queremos crear una agenda, qué necesitamos?
 - Listar los usuarios
 - Buscar usuarios
 
-Vistas necesarias:
+Otras aplicaciones sencillas
+- Calculadora básica
+- Ta te ti
+- Formulario con validación
+- Chakra ui
+- Manejo de tablas
+- Modales y diálogos
+- Formularios enganchados tipo wizard
+- Creación de facturas
+- Navegación básica
+- Inicio de sesión
+- Registro de usuarios
+- Restricción de acceso
+- Votos y reseñas
+- Preferencias personales
 
-- Listado de usuarios
-- Agregado de usuarios
+Gestión de calendario
 
-Por cada una de las vistas necesarias, crearemos una carpeta dentro de src/views. Entonces tendremos las siguientes vistas:
-
-- src/App.jsx
-- src/views/users/list/index.jsx
-- src/views/users/add/index.jsx
-
-En donde scr/App.jsx es la principal. Cualquier cambio que hagamos en App.jsx nos va a impactar directamente sobre la aplicación.
-
-Empecemos con la vista views/users/list/index.jsx:
-
-En esta vista queremos poder listar todos los usuarios disponibles.
+- Agregar actividades a un calendario
+- Mostrar actividades por fecha
+- Cada actividad debe permitir etiquetar usuarios
+- Mostrar actividades por usuario etiquetado
