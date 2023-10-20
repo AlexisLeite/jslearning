@@ -1,4 +1,18 @@
-# Vamos a hacer una agenda
+# Como subir las cosas a git
+
+Ejecutar los siguientes comandos:
+
+- **git add .** // Agrega todos los archivos al "Staging tree"
+- **git commit -m "UN MENSAJE CUALQUIERA"** // Crea un "commit" con el mensaje indicado, generalmente el mensaje debe ser descriptivo de la tarea realizada.
+- **git push** // Sube las cosas a la nube
+
+## Antes de empezar a trabajar cada día
+
+Antes de empezar a trabajar cada día deberíamos ejecutar el comando **git pull**.
+
+Este comando descarga desde la nube lo último que hayan subido todos los colaboradores del proyecto.
+
+# Objetivos del curso
 
 Temas a tratar
 - Modularización
