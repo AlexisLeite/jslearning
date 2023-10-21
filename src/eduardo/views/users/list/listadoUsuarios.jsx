@@ -1,4 +1,4 @@
-import { Button } from '@chakra-ui/react';
+import { Box, Button } from '@chakra-ui/react';
 
 const usuarios = [
   { name: 'Alexis', age: 32, Phone: 323145 },
@@ -8,23 +8,26 @@ const usuarios = [
   { name: 'Augusto', age: 22, Phone: 74568 },
 ];
 
-export const ListadoUsuariosButtons = () =>
-  usuarios.map(current => (
-    <Button
-      key={current.name}
-      onClick={() => alert(`${current.name} tiene edad ${current.age}`)}
-    >
-      {current.name}
-    </Button>
-  ));
+export const ListadoUsuariosButtons = () => (
+  <Box>
+    {usuarios.map(current => (
+      <Button
+        key={current.name}
+        onClick={() => alert(`${current.name} tiene edad ${current.age}`)}
+      >
+        {current.name}
+      </Button>
+    ))}
+  </Box>
+);
 
 export const ListadoUsuarios = () => (
-  <ul style={{ backgroundColor: 'cyan', padding: '20px', margin: '0px' }}>
+  <ul id="ListaUsuarios">
     {usuarios.map(current => (
       <li key={current.name}>
-        Nombre <strong style={{ color: 'red' }}>{current.name} </strong> - Edad:{' '}
-        <strong style={{ color: 'red' }}>{current.age}</strong> años - Telefono:{' '}
-        <strong style={{ color: 'red' }}>{current.Phone}</strong>
+        Nombre <strong>{current.name} </strong> - Edad:
+        <strong>{current.age}</strong> años - Telefono:{' '}
+        <strong>{current.Phone}</strong>
       </li>
     ))}
   </ul>

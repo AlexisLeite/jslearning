@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Heading, Text } from '@chakra-ui/react';
+import { listStyles } from './listStyles';
 
 const comidas = [
   {
@@ -46,22 +47,7 @@ const comidas = [
 
 export function Listado() {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 5,
-
-        '.item': {
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 1,
-          border: '1px solid #aaa',
-          padding: 5,
-          backgroundColor: '#f8fff8',
-        },
-      }}
-    >
+    <Box sx={listStyles}>
       <Heading
         sx={{
           textAlign: 'left',

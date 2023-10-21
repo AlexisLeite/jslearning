@@ -7,13 +7,13 @@ const Celulares = [
 ];
 
 export const ListadoCelulares = () => (
-  <ul style={{ backgroundColor: 'grey', padding: '20px', margin: '0px' }}>
+  <ul id="ListaCelulares">
     {Celulares.map(current => (
       <li key={current.marca}>
-        Marca: <strong style={{ color: 'orange' }}>{current.marca} </strong>-
-        modelo:
-        <strong style={{ color: 'orange' }}>{current.modelo}</strong> - Precio:
-        <strong style={{ color: 'orange' }}>{current.precio}</strong>
+        <span className="marca__etiqueta">Marca: </span>
+        <strong className="marca"> {current.marca} </strong> - modelo:
+        <strong className="modelo"> {current.modelo} </strong> - Precio:
+        <strong className="precio"> {current.precio} </strong>
       </li>
     ))}
   </ul>
