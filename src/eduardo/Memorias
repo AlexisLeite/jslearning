@@ -1,0 +1,13 @@
+/* Para crear una lista cualqueira debemos crearla en el idex o mejor en un modulo
+ como? en el archivo modular escribir ""const Juegos = [
+  {
+    Juego: 'jungle speed',
+    Descripcion: 'Juego de verano',
+    Edad: 'A partir de 7 años',
+    jugadores: ' 10'," 
+    o caulquier nombre que le pongamos a la lista, y escribimos tambien  las propiedades(Juego, descripcion etc y sus descripciones
+    )   Luego debemos crear la lista asi con esta const: export const Listajuegos = () => o con una fuction que tambien devuelve una lista
+     ( luego creamos la lista e
+    qtquetas ul y li comemzando siempre asi: {Juegos.map(current => (
+      <li key={current.Juegos}> depsues seguimos haciendo la lista.
+      en el index debemos importar la lista  y tambien poner en el box <nombrelista/>

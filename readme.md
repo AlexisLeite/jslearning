@@ -15,6 +15,7 @@ Este comando descarga desde la nube lo último que hayan subido todos los colabo
 # Objetivos del curso
 
 Temas a tratar
+
 - Modularización
 - Qué es un componente?
 - Propiedades de los componentes
@@ -28,6 +29,7 @@ Queremos crear una agenda, qué necesitamos?
 - Buscar usuarios
 
 Otras aplicaciones sencillas
+
 - Calculadora básica
 - Ta te ti
 - Formulario con validación

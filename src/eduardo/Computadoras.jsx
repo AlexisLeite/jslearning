@@ -4,6 +4,7 @@ export default function Compus() {
   return (
     <Box id="Computadoras">
       <Heading as="h1">¿Cómo funcionan los computadores?</Heading>
+
       <Text>
         Los computadores actuales no tienen en su interior mecanismos o ruedas
         con dientes, sino un laberinto de microscópicos transistores que

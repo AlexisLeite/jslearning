@@ -6,23 +6,26 @@ export const styles = {
   '& > *': { padding: '0 20px' },
   '& h1, & h2, & h3': { padding: '24px' },
 
+  /**listado usuarios*/
   ul: { marginLeft: '20px' },
   table: { border: '1px solid #999', borderCollapse: 'collapse' },
   'td, th': { border: '1px solid #aaa', textAlign: 'center' },
   '#TableWrapper': { padding: '20px' },
+
   h1: { color: 'blue', backgroundColor: '#999', textAlign: 'center' },
   h2: { color: 'blue', backgroundColor: '#999', textAlign: 'center' },
   h3: { color: 'blue', backgroundColor: '#999', textAlign: 'center' },
+  h4: { color: 'blue', backgroundColor: '#999', textAlign: 'center' },
   'p strong': { color: 'green', textAlign: 'center', backgroundColor: 'aqua' },
 
   '#Computadoras': {
-    padding: 0,
+    padding: ' 0px',
     display: 'flex',
     flexDirection: 'column',
     gap: '20px',
-
-    '& > *': { padding: '0 20px' },
+    '& > *': { padding: ' 0 20px' },
     '& h1, & h2, & h3': { padding: '24px' },
+    'p ': { backgroundColor: 'aqua' },
   },
 
   '#ListaCelulares': {
