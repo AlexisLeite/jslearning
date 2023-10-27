@@ -72,8 +72,8 @@ export default function List() {
       <Heading as="h1">Listado de usuarios</Heading>
       <ListadoUsuarios />
       <Compus />
-      <Listajuegos />
       <ListadoPerros />
+      <Listajuegos />
     </Box>
   );
 }
@@ -81,7 +81,7 @@ export default function List() {
 export function List2() {
   return (
     <Box sx={styles} id="MyContent">
-      <Box id="HistoriaCelulares">
+      <Box id="Historiacompus">
         <Heading as="h1">¿Cómo funcionan los computadores?</Heading>
         <Text>
           Los computadores actuales no tienen en su interior mecanismos o ruedas

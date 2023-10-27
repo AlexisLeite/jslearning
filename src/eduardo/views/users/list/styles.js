@@ -11,7 +11,6 @@ export const styles = {
   table: { border: '1px solid #999', borderCollapse: 'collapse' },
   'td, th': { border: '1px solid #aaa', textAlign: 'center' },
   '#TableWrapper': { padding: '20px' },
-
   h1: { color: 'blue', backgroundColor: '#999', textAlign: 'center' },
   h2: { color: 'blue', backgroundColor: '#999', textAlign: 'center' },
   h3: { color: 'blue', backgroundColor: '#999', textAlign: 'center' },
@@ -24,8 +23,18 @@ export const styles = {
     flexDirection: 'column',
     gap: '20px',
     '& > *': { padding: ' 0 20px' },
-    '& h1, & h2, & h3': { padding: '24px' },
+    '& h1, & h1 & h2, & h3': { padding: '24px' },
     'p ': { backgroundColor: 'aqua' },
+  },
+
+  '#Perros': {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 0,
+    ol: { padding: '20px' },
+    h2: { borderBottom: '20px solid white' },
+    padding: '0px',
+    backgroundColor: 'aqua',
   },
 
   '#ListaCelulares': {

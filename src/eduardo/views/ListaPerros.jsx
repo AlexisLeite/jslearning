@@ -1,5 +1,4 @@
-import { Heading } from '@chakra-ui/react';
-
+import { Box, Heading } from '@chakra-ui/react';
 const perros = [
   {
     Dueño: 'Juan',
@@ -16,7 +15,7 @@ const perros = [
     Actividad: 'disco planeante',
   },
   {
-    Dueño: 'Aexis',
+    Dueño: 'Alexis',
     Raza: 'Labrador',
     Color: 'Beige',
     Edad: '3 años',
@@ -39,18 +38,25 @@ const perros = [
 ];
 export function ListadoPerros() {
   return (
-    <box>
+    <Box id="Perros">
       <Heading As="h1"> Lista de Perros- Razas</Heading>
-      <ul>
+      <ol>
         {perros.map(current => (
           <li key={current.Dueño}>
             {' '}
-            Dueño: {current.Dueño} * Raza: {current.Raza} * Color:{' '}
-            {current.Color} * Edad: {current.Edad} * Actividad:{' '}
-            {current.Actividad}
+            <strong style={{ color: 'black' }}>*Dueño: </strong>
+            <strong style={{ color: 'blue' }}>{current.Dueño} </strong>
+            <strong style={{ color: 'black' }}>*Raza:</strong>{' '}
+            <strong style={{ color: 'blue' }}>{current.Raza} </strong>{' '}
+            <strong style={{ color: 'black' }}>*Color:</strong>{' '}
+            <strong style={{ color: 'blue' }}>{current.Color} </strong>{' '}
+            <strong style={{ color: 'black' }}>*Edad :</strong>{' '}
+            <strong style={{ color: 'blue' }}>{current.Edad} </strong>
+            <strong style={{ color: 'black' }}>*Actividad:</strong>{' '}
+            <strong style={{ color: 'blue' }}>{current.Actividad} </strong>
           </li>
         ))}
-      </ul>
-    </box>
+      </ol>
+    </Box>
   );
 }
