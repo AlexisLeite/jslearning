@@ -3,9 +3,9 @@ import { ListadoPaisesAsLi, ListadoPaisesAsTable } from './ListadoPaises';
 import { ListadoUsuarios, ListadoUsuariosButtons } from './listadoUsuarios';
 import { ListadoCelulares } from './ListadoCelulares';
 import { styles } from './styles';
-import Compus from '../../../Computadoras';
-import { Listajuegos } from '../../../Listajuegos';
-import { ListadoPerros } from '../../ListaPerros';
+import Compus from './Computadoras';
+import { Listajuegos } from './Listajuegos';
+import { ListadoPerros } from './ListaPerros';
 
 /**
  * TAREAS PENDIENTES

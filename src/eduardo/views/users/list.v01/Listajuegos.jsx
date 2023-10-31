@@ -1,4 +1,4 @@
-import { Heading } from '@chakra-ui/react';
+import { Box, Heading } from '@chakra-ui/react';
 
 const Juegos = [
   {
@@ -29,17 +29,26 @@ const Juegos = [
 ];
 export function Listajuegos() {
   return (
-    <box id="Juegos">
+    <Box id="Juegos">
       <Heading As="h1">Lista de juegos de mesa</Heading>
 
       <ul>
         {Juegos.map(current => (
           <li key={current.Juego}>
-            Nombre Juego: {current.Juego} - Descripcion: {current.Descripcion} -
-            Edad: {current.Edad} - Cantidad jugadores: {current.jugadores}
+            <strong className=" Juego_etiqueta"> *Juego:</strong>{' '}
+            <span className="Juego">{current.Juego}</span>{' '}
+            <strong className="Descripcion_etiqueta"> *Descripcion:</strong>{' '}
+            <span className="Descripcion">{current.Descripcion}</span>
+            <strong className="Edad_etiqueta"> *Edad:</strong>{' '}
+            <span className="Edad">{current.Edad}</span>{' '}
+            <strong className="Jugadores_etiqueta">
+              {' '}
+              * Cantidad jugadores:
+            </strong>{' '}
+            <span className="jugadores">{current.jugadores}</span>
           </li>
         ))}
       </ul>
-    </box>
+    </Box>
   );
 }

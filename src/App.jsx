@@ -8,10 +8,10 @@ import {
   theme,
 } from '@chakra-ui/react';
 import './styles.css';
-import List from './eduardo/views/users/list/index.jsx';
 import { PaginaValentina } from './valentina';
 import { Ejemplos } from './ejemplos';
 import { useCurrentPage } from './ejemplos/useCurrentPage';
+import { List02 } from './eduardo/list.v02';
 
 function App() {
   const route = useCurrentPage({
@@ -34,7 +34,7 @@ function App() {
           <Link href="/">Volver al inicio</Link>
         </Heading>
         {route === 'valentina' && <PaginaValentina />}
-        {route === 'eduardo' && <List />}
+        {route === 'eduardo' && <List02 />}
         {route === 'ejemplos' && <Ejemplos />}
         {route === '' && (
           <Box as="ul">

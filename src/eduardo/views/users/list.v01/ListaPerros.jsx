@@ -44,16 +44,16 @@ export function ListadoPerros() {
         {perros.map(current => (
           <li key={current.Dueño}>
             {' '}
-            <strong style={{ color: 'black' }}>*Dueño: </strong>
-            <strong style={{ color: 'blue' }}>{current.Dueño} </strong>
-            <strong style={{ color: 'black' }}>*Raza:</strong>{' '}
-            <strong style={{ color: 'blue' }}>{current.Raza} </strong>{' '}
-            <strong style={{ color: 'black' }}>*Color:</strong>{' '}
-            <strong style={{ color: 'blue' }}>{current.Color} </strong>{' '}
-            <strong style={{ color: 'black' }}>*Edad :</strong>{' '}
-            <strong style={{ color: 'blue' }}>{current.Edad} </strong>
-            <strong style={{ color: 'black' }}>*Actividad:</strong>{' '}
-            <strong style={{ color: 'blue' }}>{current.Actividad} </strong>
+            <strong className="Dueño_etiqueta"> *Dueño: </strong>
+            <strong className="Dueño">{current.Dueño} </strong>
+            <strong className="Raza_etiqueta"> *Raza:</strong>{' '}
+            <strong className="Raza">{current.Raza} </strong>{' '}
+            <strong className="Color_etiqueta">*Color:</strong>{' '}
+            <strong className="Color">{current.Color} </strong>{' '}
+            <strong className="Edad_etiqueta">*Edad :</strong>{' '}
+            <strong className="Edad">{current.Edad} </strong>
+            <strong className="Actividad_etiqueta">*Actividad:</strong>{' '}
+            <strong className="Actividad">{current.Actividad} </strong>
           </li>
         ))}
       </ol>
