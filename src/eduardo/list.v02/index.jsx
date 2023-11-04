@@ -171,7 +171,7 @@
 import { Box, Heading } from '@chakra-ui/react';
 import { styles } from './styles';
 import { DogsList } from './components/ListaPerros/DogsList';
-import { Pruebas } from './Pruebas';
+import { Test } from './components/ListaPerros/Test';
 
 export const List02 = () => {
   return (
@@ -180,7 +180,7 @@ export const List02 = () => {
         Ejercicios de la semana 2
       </Heading>
       <DogsList />
-      <Pruebas />
+      <Test />
     </Box>
   );
 };

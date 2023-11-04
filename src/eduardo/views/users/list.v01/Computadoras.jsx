@@ -1,6 +1,6 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
 
-export default function Compus() {
+export const Compus = () => {
   return (
     <Box id="Computadoras">
       <Heading as="h1">¿Cómo funcionan los computadores?</Heading>
@@ -92,4 +92,4 @@ export default function Compus() {
       </Text>
     </Box>
   );
-}
+};

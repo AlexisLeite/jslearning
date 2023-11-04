@@ -1,4 +1,4 @@
-/* Para crear una lista cualqueira debemos crearla en el idex o mejor en un modulo
+/* Para crear una lista cualqueira debemos crearla en el index o mejor en un modulo
  como? en el archivo modular escribir ""const Juegos = [
   {
     Juego: 'jungle speed',
