@@ -70,26 +70,36 @@ export const styles = {
     padding: 7,
   },
 
-  '.Title1': {
-    background: 'aqua',
-    color: 'blue',
-    padding: '1',
-    textTransform: 'uppercase',
-    textDecoration: 'underline',
-  },
+  '#ListaEventos': {
+    h2: {
+      background: '#494',
+      color: 'white',
+      padding: '1',
+      textAlign: 'center',
+    },
 
-  '.Lista1': {
-    color: '#111',
-    fontWeight: 'bold',
-    background: '#999',
-    padding: '1',
-    margin: '2',
-  },
-  '.ul': {
-    padding: '1',
-    margin: '3',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '1',
+    table: {
+      background: '#eee' /* 
+      borderCollapse: 'separate',
+      borderSpacing: '10px', */,
+    },
+
+    td: {
+      border: '1px solid #ccc',
+      padding: '5px 10px',
+
+      '&:hover': {
+        background: '#ffe',
+      },
+    },
+
+    '.game__team1__flag, .game__team2__flag': {
+      width: '50px',
+      height: '33px',
+    },
+
+    '[class^=game__team]': {
+      background: 'white',
+    },
   },
 };

@@ -4,46 +4,73 @@ const eventos = [
   {
     Hora: '17:00',
     Torneo: 'Copa Libertadores',
-    Encuentro: 'Fluminense vs Boca Jr:',
+    team1: { name: 'Fluminense', flag: '/images/brasil.png' },
+    team2: { name: 'Boca Jr', flag: '/images/brasil.png' },
   },
 
   {
     Hora: '18:30',
     Torneo: 'Brasileirao',
-    Encuentro: ' Atletico Mineiro vs America Mineiro',
+    team1: { name: 'Atletico Mineiro', flag: '/images/brasil.png' },
+    team2: { name: 'America Mineiro', flag: '/images/brasil.png' },
   },
 
   {
     Hora: '19:00',
     Torneo: 'Campeonato Panamericano',
-    Encuentro: ' Chile vs Brasil',
+    team1: { name: 'Chile', flag: '/images/brasil.png' },
+    team2: { name: 'Brasil', flag: '/images/brasil.png' },
   },
 
   {
     Hora: '19:30',
     Torneo: 'Campeonato Uruguayo',
-    Encuentro: 'Nacional vs River',
+    team1: { name: 'Nacional', flag: '/images/brasil.png' },
+    team2: { name: 'River', flag: '/images/brasil.png' },
   },
 
-  { Hora: '19:45', Torneo: 'Laliga', Encuentro: 'Barcelona vs Rayo Vallecano' },
+  {
+    Hora: '19:45',
+    Torneo: 'Laliga',
+    team1: { name: 'Barcelona', flag: '/images/brasil.png' },
+    team2: { name: 'Rayo Vallecano', flag: '/images/brasil.png' },
+  },
 ];
+
+/**
+ * Ejercicio
+ *
+ * IMPORTANTE, PRIMERO QUE TODO LO DEMÁS
+ *
+ * Hacer otro listado IDÉNTICO a este, en OTRO ARCHIVO
+ * CON OTRO ID en el Box.
+ */
 
 export const Listaeventos = () => {
   return (
-    <Box>
-      <Heading As="h1" className="Title1">
-        {' '}
-        Eventos - Sábado 4 de noviembre de 2023{' '}
+    <Box id="ListaEventos">
+      <Heading As="h1">
+        Eventos
+        <br />
+        Sábado 4 de noviembre de 2023
       </Heading>
-      <img src="" alt="" />
-      <ul className="ul">
+      <table>
         {eventos.map(current => (
-          <li key={current.Hora} className="Lista1 ">
-            {' '}
-            -{current.Hora}-{current.Torneo}-{current.Encuentro}
-          </li>
+          <tr key={current.Hora}>
+            <td className="game__hour">{current.Hora}</td>
+            <td className="game__tournment">{current.Torneo}</td>
+            <td className="game__team1__flag">
+              <img src={current.team1.flag} alt="" />
+            </td>
+            <td className="game__team1__name">{current.team1.name}</td>
+            <td className="game__team1__vs">vs</td>
+            <td className="game__team2__name">{current.team2.name}</td>
+            <td className="game__team2__flag">
+              <img src={current.team2.flag} alt="" />
+            </td>
+          </tr>
         ))}
-      </ul>
+      </table>
     </Box>
   );
 };
