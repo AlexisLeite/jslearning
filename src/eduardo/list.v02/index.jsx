@@ -172,14 +172,16 @@ import { Box, Heading } from '@chakra-ui/react';
 import { styles } from './styles';
 import { DogsList } from './components/ListaPerros/DogsList';
 import { Test } from './components/ListaPerros/Test';
-
+import { Listaeventos } from './components/Listaeventos';
 export const List02 = () => {
   return (
     <Box sx={styles}>
       <Heading as="h1" className="withPadding1 withHover uppercased">
         Ejercicios de la semana 2
       </Heading>
+
       <DogsList />
+      <Listaeventos />
       <Test />
     </Box>
   );

@@ -69,4 +69,27 @@ export const styles = {
   '.withPadding3': {
     padding: 7,
   },
+
+  '.Title1': {
+    background: 'aqua',
+    color: 'blue',
+    padding: '1',
+    textTransform: 'uppercase',
+    textDecoration: 'underline',
+  },
+
+  '.Lista1': {
+    color: '#111',
+    fontWeight: 'bold',
+    background: '#999',
+    padding: '1',
+    margin: '2',
+  },
+  '.ul': {
+    padding: '1',
+    margin: '3',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1',
+  },
 };
