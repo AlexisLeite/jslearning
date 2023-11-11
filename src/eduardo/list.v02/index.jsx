@@ -1,4 +1,11 @@
-/**
+/**- **git add .** // Agrega todos los archivos al "Staging tree"
+- **git commit -m "UN MENSAJE CUALQUIERA"** // Crea un "commit" con el mensaje indicado, generalmente el mensaje debe ser descriptivo de la tarea realizada.
+- **git push** // Sube las cosas a la nube
+
+## Antes de empezar a trabajar cada día
+
+Antes de empezar a trabajar cada día deberíamos ejecutar el comando **git pull**.
+
  # Modularización:
  
  Es la capacidad de "encapsular" el código en distintos archivos, generalmente cada archivo cumple un rol distinto y entre todos

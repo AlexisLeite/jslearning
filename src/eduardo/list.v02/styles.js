@@ -138,7 +138,11 @@ export const styles = {
     table: { background: ' #e3e3e3' },
 
     th: {
-      '&:hover': { background: 'white' },
+      '&:hover': {
+        background: 'white',
+        color: 'darkred',
+        transform: 'translateX(20px)',
+      },
       border: '1px solid #605b5b',
       borderTop: '2px solid#858484',
       borderBottom: '2px solid#858484 ',

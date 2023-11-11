@@ -39,13 +39,15 @@ export const ListaPoli = () => {
             <th>Fecha</th>
           </tr>
         </thead>
-        {policlinica.map(current => (
-          <tr key={current.Usuario}>
-            <td>{current.Usuario}</td>
-            <td>{current.Consulta}</td>
-            <td>{current.Diagnostico}</td> <td>{current.Fecha}</td>
-          </tr>
-        ))}
+        <tbody>
+          {policlinica.map(current => (
+            <tr key={current.Usuario}>
+              <td>{current.Usuario}</td>
+              <td>{current.Consulta}</td>
+              <td>{current.Diagnostico}</td> <td>{current.Fecha}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </Box>
   );

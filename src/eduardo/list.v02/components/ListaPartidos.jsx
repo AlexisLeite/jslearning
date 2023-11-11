@@ -31,7 +31,6 @@ export const ListaPartidos = () => {
   return (
     <Box id="ListaPartidos">
       <Heading As="h1">
-        {' '}
         Partidos <br /> Viernes 10 de noviembre 2023
       </Heading>
       <table>
@@ -46,7 +45,6 @@ export const ListaPartidos = () => {
             <td className="game__team1__vs">vs</td>
             <td className="game__team2__name"> {current.team2.name}</td>
             <td className="game__team2__flag">
-              {' '}
               <img src={current.team2.flag} alt="" />
             </td>
           </tr>
