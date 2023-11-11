@@ -173,6 +173,8 @@ import { styles } from './styles';
 import { DogsList } from './components/ListaPerros/DogsList';
 import { Test } from './components/ListaPerros/Test';
 import { Listaeventos } from './components/Listaeventos';
+import { ListaPartidos } from './components/ListaPartidos';
+import { ListaPoli } from './components/LitsaPoli';
 export const List02 = () => {
   return (
     <Box sx={styles}>
@@ -183,6 +185,8 @@ export const List02 = () => {
       <DogsList />
       <Listaeventos />
       <Test />
+      <ListaPartidos />
+      <ListaPoli />
     </Box>
   );
 };

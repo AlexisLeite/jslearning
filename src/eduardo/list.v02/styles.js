@@ -88,9 +88,7 @@ export const styles = {
       border: '1px solid #ccc',
       padding: '5px 10px',
 
-      '&:hover': {
-        background: '#ffe',
-      },
+      '&:hover': { background: '#ffe' },
     },
 
     '.game__team1__flag, .game__team2__flag': {
@@ -100,6 +98,63 @@ export const styles = {
 
     '[class^=game__team]': {
       background: 'white',
+    },
+  },
+  '#ListaPartidos': {
+    h2: {
+      background: '#fb6464',
+      color: 'white',
+      padding: '1',
+      textAlign: 'center',
+    },
+    table: {
+      background: '#f5f5f5',
+      color: 'blue',
+    },
+    td: {
+      border: '1px solid #ccc',
+      padding: '5px 10px',
+      '&:hover': { background: '#927f7f' },
+    },
+
+    '[class^=game__hour]': {
+      background: '#dddddd',
+      color: 'black',
+    },
+    '[class^=game__tournment]': {
+      background: '#dddddd',
+      color: 'black',
+    },
+    '.game__team1__flag,.game__team2__flag': { width: '50px', height: '33px' },
+  },
+  '#ListaPoli': {
+    h2: {
+      textDecoration: 'underline',
+      background: '#a8a3a3',
+      color: '#363535',
+      padding: '8',
+      textAlign: 'center',
+    },
+    table: { background: ' #e3e3e3' },
+
+    th: {
+      '&:hover': { background: 'white' },
+      border: '1px solid #605b5b',
+      borderTop: '2px solid#858484',
+      borderBottom: '2px solid#858484 ',
+      background: '#bfbfbf',
+      fontWeight: 'bold',
+      textAlign: 'center',
+      padding: '5',
+    },
+
+    td: {
+      color: 'black',
+      textAlign: 'center',
+      border: '1px solid #605b5b ',
+      padding: '5px 10px',
+      height: '20',
+      width: '60',
     },
   },
 };
