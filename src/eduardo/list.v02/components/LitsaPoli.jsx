@@ -11,7 +11,7 @@ const policlinica = [
     Usuario: 'Yoana Perez',
     Consulta: 'Ginecologo',
     Diagnostico: 'Embarazo',
-    Fecha: '12./10/2023',
+    Fecha: '12/10/2023',
   },
   {
     Usuario: 'Jose Fernandez',

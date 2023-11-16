@@ -182,18 +182,21 @@ import { Test } from './components/ListaPerros/Test';
 import { Listaeventos } from './components/Listaeventos';
 import { ListaPartidos } from './components/ListaPartidos';
 import { ListaPoli } from './components/LitsaPoli';
+import { ListaPrecios } from './components/ListaPrecios';
+import { Tarjeta } from './components/Tarjeta';
 export const List02 = () => {
   return (
     <Box sx={styles}>
+      <Tarjeta />
       <Heading as="h1" className="withPadding1 withHover uppercased">
         Ejercicios de la semana 2
       </Heading>
-
       <DogsList />
       <Listaeventos />
       <Test />
       <ListaPartidos />
       <ListaPoli />
+      <ListaPrecios />
     </Box>
   );
 };
