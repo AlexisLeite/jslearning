@@ -176,6 +176,7 @@ Antes de empezar a trabajar cada día deberíamos ejecutar el comando **git pull
  */
 
 import { Box, Heading } from '@chakra-ui/react';
+
 import { styles } from './styles';
 import { DogsList } from './components/ListaPerros/DogsList';
 import { Test } from './components/ListaPerros/Test';
@@ -184,6 +185,9 @@ import { ListaPartidos } from './components/ListaPartidos';
 import { ListaPoli } from './components/LitsaPoli';
 import { ListaPrecios } from './components/ListaPrecios';
 import { Tarjeta } from './components/Tarjeta';
+import { Pruebas } from './components/Test';
+import { Notebooks } from './components/Notebooks';
+
 export const List02 = () => {
   return (
     <Box sx={styles}>
@@ -197,6 +201,8 @@ export const List02 = () => {
       <ListaPartidos />
       <ListaPoli />
       <ListaPrecios />
+      <Pruebas />
+      <Notebooks />
     </Box>
   );
 };

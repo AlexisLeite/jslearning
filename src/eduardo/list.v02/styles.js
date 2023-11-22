@@ -175,7 +175,7 @@ export const styles = {
       width: '60',
     },
   },
-  '#ListaPrecios': {
+  '.ListaPrecios': {
     h2: {
       fontSize: 'xxlarge',
       '&:hover': {
@@ -217,7 +217,7 @@ export const styles = {
       padding: '10px 30px',
     },
   },
-  '.tarjeta': {
+  '.Tarjeta': {
     fontSize: 'xxLarge',
     borderRadius: '30px',
     padding: '8',
@@ -233,5 +233,32 @@ export const styles = {
       transform: 'translateY(10px)',
       textTransform: 'uppercase',
     },
+  },
+  '.Prueba': {
+    textAlign: 'center',
+    background: 'aqua',
+    color: 'red',
+    textDecoration: 'underline',
+    fontWeight: 'bold',
+    fontSize: 'large',
+    padding: '10',
+
+    '&:hover': { color: 'blue', transform: 'translateX(10px)' },
+  },
+  '.Notebooks': {
+    h1: {
+      '&:hover': {
+        color: 'red',
+        background: '#767575',
+        transform: 'translateY(10px)',
+      },
+      textAlign: 'center',
+      background: 'black',
+      color: 'white',
+      padding: '6',
+    },
+    table: { background: '#e4f5fd' },
+    td: { border: '1px solid', width: '60', height: '20', textAlign: 'center' },
+    th: { border: '2px solid' },
   },
 };
