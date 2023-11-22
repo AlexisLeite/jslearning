@@ -10,7 +10,7 @@ const dogs = [
 export const DogsList = () => {
   return (
     <Box id="ListaPerros">
-      <Heading as="h2" className="withPadding1">
+      <Heading as="h2" className="withPadding1 ">
         Lista de perros
       </Heading>
       <Box as="ul" className="withPadding1">

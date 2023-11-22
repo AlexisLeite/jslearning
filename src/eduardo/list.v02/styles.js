@@ -78,7 +78,6 @@ export const styles = {
       padding: '1',
       textAlign: 'center',
     },
-
     table: {
       background: '#eee',
       marginBottom: '6px',
@@ -132,21 +131,6 @@ export const styles = {
     '.game__team1__flag,.game__team2__flag': { width: '50px', height: '33px' },
   },
   '#ListaPoli': {
-    h2: {
-      '&:hover': {
-        textTransform: 'uppercase',
-        textDecoration: 'underline',
-
-        background: '#537acf',
-        color: '#fdf904',
-        transform: 'translateY(6px)',
-      },
-
-      background: '#a8a3a3',
-      color: '#363535',
-      padding: '8',
-      textAlign: 'center',
-    },
     table: { background: ' #e3e3e3', marginBottom: '6px' },
 
     th: {
@@ -176,20 +160,6 @@ export const styles = {
     },
   },
   '.ListaPrecios': {
-    h2: {
-      fontSize: 'xxlarge',
-      '&:hover': {
-        background: '#faf4f4',
-        color: 'black',
-        textTransform: 'uppercase',
-        transform: 'translateY(10px)',
-      },
-      borderBottom: '1px solid black',
-      padding: '30px',
-      background: '#292929',
-      color: '#ffffff',
-      textAlign: 'center',
-    },
     table: { background: '#edd3d3' },
     th: {
       '&:hover': {
@@ -217,6 +187,7 @@ export const styles = {
       padding: '10px 30px',
     },
   },
+
   '.Tarjeta': {
     fontSize: 'xxLarge',
     borderRadius: '30px',
@@ -245,20 +216,19 @@ export const styles = {
 
     '&:hover': { color: 'blue', transform: 'translateX(10px)' },
   },
-  '.Notebooks': {
-    h1: {
-      '&:hover': {
-        color: 'red',
-        background: '#767575',
-        transform: 'translateY(10px)',
-      },
-      textAlign: 'center',
-      background: 'black',
-      color: 'white',
-      padding: '6',
+
+  '.estilo ': {
+    '&:hover': {
+      color: 'red',
+      background: '#767575',
+      transform: 'translateY(10px)',
     },
-    table: { background: '#e4f5fd' },
-    td: { border: '1px solid', width: '60', height: '20', textAlign: 'center' },
-    th: { border: '2px solid' },
+    textAlign: 'center',
+    background: 'black',
+    color: 'white',
+    padding: '6',
   },
+  table: { background: '#e4f5fd' },
+  td: { border: '1px solid', width: '60', height: '20', textAlign: 'center' },
+  th: { border: '2px solid' },
 };

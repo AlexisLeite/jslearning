@@ -29,7 +29,9 @@ const policlinica = [
 export const ListaPoli = () => {
   return (
     <Box id="ListaPoli">
-      <Heading As="h2">Consultas Policlinica</Heading>
+      <Heading As="h1" className="estilo">
+        Consultas Policlinica
+      </Heading>
       <table>
         <thead>
           <tr>

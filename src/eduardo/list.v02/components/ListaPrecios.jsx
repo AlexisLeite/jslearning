@@ -13,7 +13,9 @@ const precios = [
 export const ListaPrecios = () => {
   return (
     <Box className="ListaPrecios">
-      <Heading As="h1">Comidas y Precios</Heading>
+      <Heading As="h1" className="estilo">
+        Comidas y Precios
+      </Heading>
       <table>
         <thead>
           <tr>
