@@ -42,10 +42,7 @@ const equipos = [
 export const Notebooks = () => {
   return (
     <Box className="Notebooks">
-      <Heading as="h1" className="estilo">
-        {' '}
-        Productos Informaticos
-      </Heading>
+      <Heading as="h1"> Productos Informaticos</Heading>
       <table>
         <thead>
           <tr>

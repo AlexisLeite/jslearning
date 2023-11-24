@@ -179,14 +179,15 @@ import { Box, Heading } from '@chakra-ui/react';
 
 import { styles } from './styles';
 import { DogsList } from './components/ListaPerros/DogsList';
-import { Test } from './components/ListaPerros/Test';
 import { Listaeventos } from './components/Listaeventos';
 import { ListaPartidos } from './components/ListaPartidos';
 import { ListaPoli } from './components/LitsaPoli';
 import { ListaPrecios } from './components/ListaPrecios';
 import { Tarjeta } from './components/Tarjeta';
-import { Pruebas } from './components/Test';
+import { Pruebas } from './components/Pruebas';
 import { Notebooks } from './components/Notebooks';
+import { Lista1 } from './components/Lista1';
+import { Lista2 } from './components/Lista2';
 
 export const List02 = () => {
   return (
@@ -197,12 +198,14 @@ export const List02 = () => {
       </Heading>
       <DogsList />
       <Listaeventos />
-      <Test />
       <ListaPartidos />
       <ListaPoli />
       <ListaPrecios />
-      <Pruebas />
       <Notebooks />
+
+      <Lista1 />
+      <Lista2 />
+      <Pruebas />
     </Box>
   );
 };

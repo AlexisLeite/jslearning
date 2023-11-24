@@ -22,6 +22,7 @@ export const styles = {
     h2: {
       background: 'red',
       color: 'white',
+      textAlign: 'center',
     },
     ul: { marginBottom: '6px' },
   },
@@ -60,7 +61,7 @@ export const styles = {
   },
 
   '.withPadding1': {
-    padding: 3,
+    padding: 5,
   },
 
   '.withPadding2': {
@@ -131,6 +132,21 @@ export const styles = {
     '.game__team1__flag,.game__team2__flag': { width: '50px', height: '33px' },
   },
   '#ListaPoli': {
+    h2: {
+      '&:hover': {
+        textTransform: 'uppercase',
+        textDecoration: 'underline',
+
+        background: '#537acf',
+        color: '#fdf904',
+        transform: 'translateY(6px)',
+      },
+
+      background: '#a8a3a3',
+      color: '#363535',
+      padding: '8',
+      textAlign: 'center',
+    },
     table: { background: ' #e3e3e3', marginBottom: '6px' },
 
     th: {
@@ -160,7 +176,21 @@ export const styles = {
     },
   },
   '.ListaPrecios': {
-    table: { background: '#edd3d3' },
+    h2: {
+      fontSize: 'xxlarge',
+      '&:hover': {
+        background: '#faf4f4',
+        color: 'black',
+        textTransform: 'uppercase',
+        transform: 'translateY(10px)',
+      },
+      borderBottom: '1px solid black',
+      padding: '30px',
+      background: '#292929',
+      color: '#ffffff',
+      textAlign: 'center',
+    },
+    table: { marginBottom: '6px', background: '#edd3d3' },
     th: {
       '&:hover': {
         background: '#c9c8c8',
@@ -205,30 +235,55 @@ export const styles = {
       textTransform: 'uppercase',
     },
   },
-  '.Prueba': {
-    textAlign: 'center',
-    background: 'aqua',
-    color: 'red',
-    textDecoration: 'underline',
-    fontWeight: 'bold',
-    fontSize: 'large',
-    padding: '10',
 
-    '&:hover': { color: 'blue', transform: 'translateX(10px)' },
-  },
-
-  '.estilo ': {
-    '&:hover': {
-      color: 'red',
-      background: '#767575',
-      transform: 'translateY(10px)',
+  '.Notebooks': {
+    h1: {
+      '&:hover': { color: 'rgb(16, 13, 13)', background: 'rgb(169, 156, 156)' },
+      borderTop: '6px ',
+      background: 'black',
+      color: 'white',
+      textAlign: 'center',
+      padding: '20px',
     },
-    textAlign: 'center',
-    background: 'black',
-    color: 'white',
-    padding: '6',
+    table: { marginBottom: '6px', background: 'rgb(194, 196, 196)' },
+    th: { border: '2px solid', padding: 3, background: '#e1e0e0' },
+    td: {
+      '&:hover': {
+        color: 'rgb(244, 129, 129)',
+        background: 'rgb(130, 124, 124)',
+        trasnform: 'translateX(8px)',
+      },
+      border: '1px solid',
+      textAlign: 'center',
+      width: '60',
+      height: '20',
+    },
   },
-  table: { background: '#e4f5fd' },
-  td: { border: '1px solid', width: '60', height: '20', textAlign: 'center' },
-  th: { border: '2px solid' },
+  /*Lista1y2*/
+  '.container': {
+    marginBottom: '6px',
+    display: 'flex',
+    flexDirection: 'column',
+    background: 'rgb(40, 244, 121)',
+  },
+  '.Estilosh1': {
+    color: 'green',
+    textAlign: 'center',
+    background: 'hsl(0, 56.40%, 80.20%)',
+    padding: '5',
+  },
+  '.lista': {
+    textAlign: 'center',
+    listStyleType: 'none',
+    margin: '3',
+
+    background: '#eec3c3',
+    padding: '20px',
+    border: '1px solid rgb(164, 16, 16)',
+  },
+  ul: { margin: '0' },
+  '.nombre': {
+    fontWeight: 'bold',
+  },
+  '.apellido': { fontWeight: 'bold' },
 };

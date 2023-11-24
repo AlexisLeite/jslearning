@@ -49,7 +49,7 @@ const eventos = [
 export const Listaeventos = () => {
   return (
     <Box id="ListaEventos">
-      <Heading As="h1">
+      <Heading as="h2">
         Eventos
         <br />
         Sábado 4 de noviembre de 2023
