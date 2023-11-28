@@ -188,7 +188,7 @@ import { Pruebas } from './components/Pruebas';
 import { Notebooks } from './components/Notebooks';
 import { Lista1 } from './components/Lista1';
 import { Lista2 } from './components/Lista2';
-
+import { Formulario } from './components/Formulario';
 export const List02 = () => {
   return (
     <Box sx={styles}>
@@ -196,6 +196,7 @@ export const List02 = () => {
       <Heading as="h1" className="withPadding1 withHover uppercased">
         Ejercicios de la semana 2
       </Heading>
+
       <DogsList />
       <Listaeventos />
       <ListaPartidos />
@@ -206,6 +207,7 @@ export const List02 = () => {
       <Lista1 />
       <Lista2 />
       <Pruebas />
+      <Formulario />
     </Box>
   );
 };

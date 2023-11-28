@@ -286,4 +286,10 @@ export const styles = {
     fontWeight: 'bold',
   },
   '.apellido': { fontWeight: 'bold' },
+
+  '.Pruebas': {
+    textAlign: 'center',
+    background: 'aqua',
+  },
+  '.Container': { display: 'flex', flexDirection: 'column', width: '100%' },
 };

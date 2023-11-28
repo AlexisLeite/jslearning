@@ -1,9 +1,3 @@
-import { Heading } from '@chakra-ui/react';
-
 export const Pruebas = () => {
-  return <Heading as="h1"></Heading>;
+  return <h1> </h1>;
 };
-export function MyButton() {
-  return <button className="boton">Soy un botón</button>;
-}
-console.log();

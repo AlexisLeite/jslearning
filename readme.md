@@ -1,3 +1,5 @@
+rafc= crea el componente si tener que escribirlo
+
 # Como subir las cosas a git
 
 Ejecutar los siguientes comandos:
