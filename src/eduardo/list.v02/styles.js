@@ -291,5 +291,64 @@ export const styles = {
     textAlign: 'center',
     background: 'aqua',
   },
-  '.Container': { display: 'flex', flexDirection: 'column', width: '100%' },
+  /*Formulario*/
+  '.Container': {
+    border: '2px solid rgb(143, 143, 126) ',
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%',
+    padding: '30',
+    background: 'rgb(248, 212, 212)',
+    marginBottom: '6px',
+  },
+
+  '.encabezado': { textAlign: 'center', marginBottom: '18' },
+
+  '.formulario': {
+    width: '100%',
+    height: '300px',
+    border: '1px solid ',
+    textAlign: 'center',
+    padding: '30px',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  '.entrada': { border: '1px solid ', textAlign: 'center' },
+
+  '.boton': {
+    borderRadius: '30px',
+    margin: '20px 140px',
+    padding: '2',
+    color: 'rgb(39, 33, 30)',
+    background: 'rgb(186, 156, 156)',
+  },
+  /* Formulario2Prueba*/
+  '.Contenedor': {
+    border: '2px solid',
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%',
+
+    padding: '30px',
+    background: 'rgb(248, 212, 212)',
+  },
+  '.title': { textAlign: 'center', marginBottom: '12px' },
+
+  '.form': {
+    width: '100%',
+    height: '400px',
+    border: '1px solid rgb(35, 34, 34) ',
+    textAlign: 'center',
+    padding: '50px',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  '.btn': {
+    borderRadius: '30px',
+    margin: '20px 120px',
+    padding: '2',
+    color: 'rgb(39, 33, 30)',
+    background: 'rgb(186, 156, 156)',
+  },
+  '.int': { border: '1px solid', textAlign: 'center' },
 };

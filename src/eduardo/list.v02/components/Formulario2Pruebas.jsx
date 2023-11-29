@@ -1,30 +1,25 @@
 import { Box, Heading } from '@chakra-ui/react';
 
-export const Formulario = () => {
+export const Formulario2Pruebas = () => {
   return (
-    <Box className="Container">
-      <Heading as="h1" className="encabezado">
+    <Box className="Contenedor">
+      <Heading as="h1" className="title">
         {' '}
         Formulario{' '}
       </Heading>
-      <form className="formulario">
+      <form className="form">
         <span>
           <label htmlFor=" Nombre">Nombre:</label>
         </span>{' '}
         {''}{' '}
-        <input
-          className="entrada"
-          id="nombre"
-          type="text"
-          placeholder="Escribe tu Nombre"
-        />{' '}
+        <input className="int" type="text" placeholder="Escribe tu Nombre" />{' '}
         <br />
         <span>
           <label htmlFor="">Edad:</label>{' '}
         </span>
-        {''}{' '}
+        {''}
         <input
-          className="entrada"
+          className="int"
           type="number"
           id="Nombre"
           placeholder=" Escribe tu edad"
@@ -32,12 +27,15 @@ export const Formulario = () => {
         <br />
         <label htmlFor="Nombre">Telefono:</label>
         <input
-          className="entrada"
+          className="int"
           type="number"
           id="Nombre"
           placeholder=" Telefono"
         />
-        <button className="boton">
+        <br />
+        <label htmlFor=""> C.I.</label>
+        <input className="int" type="text" placeholder="Escribe tu C.I." />
+        <button className="btn">
           {' '}
           <strong>Enviar</strong>{' '}
         </button>
