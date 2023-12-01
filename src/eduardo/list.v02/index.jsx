@@ -190,6 +190,7 @@ import { Lista1 } from './components/Lista1';
 import { Lista2 } from './components/Lista2';
 import { Formulario } from './components/Formulario';
 import { Formulario2Pruebas } from './components/Formulario2Pruebas';
+import { Formulariomail } from './components/Formulariomail';
 export const List02 = () => {
   return (
     <Box sx={styles}>
@@ -210,6 +211,7 @@ export const List02 = () => {
       <Pruebas />
       <Formulario />
       <Formulario2Pruebas />
+      <Formulariomail />
     </Box>
   );
 };
