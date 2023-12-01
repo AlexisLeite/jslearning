@@ -332,8 +332,12 @@ export const styles = {
     padding: '30px',
     background: 'rgb(248, 212, 212)',
   },
-  '.title': { textAlign: 'center', marginBottom: '12px' },
-
+  '.title': {
+    textAlign: 'center',
+    marginBottom: '12px',
+    fontFamily: 'sanserif',
+  },
+  '.label': { fontFamily: 'cursive' },
   '.form': {
     width: '100%',
     height: '400px',
@@ -349,6 +353,11 @@ export const styles = {
     padding: '2',
     color: 'rgb(39, 33, 30)',
     background: 'rgb(186, 156, 156)',
+    fontFamily: 'roman',
+    fontSize: 'large',
   },
-  '.int': { border: '1px solid', textAlign: 'center' },
+  '.int': {
+    border: '1px solid',
+    textAlign: 'center',
+  },
 };

@@ -9,32 +9,51 @@ export const Formulario2Pruebas = () => {
       </Heading>
       <form className="form">
         <span>
-          <label htmlFor=" Nombre">Nombre:</label>
+          <label className="label" htmlFor="name">
+            Nombre:
+          </label>
         </span>{' '}
         {''}{' '}
-        <input className="int" type="text" placeholder="Escribe tu Nombre" />{' '}
+        <input
+          className="int"
+          type="text"
+          id="name"
+          placeholder="Escribe tu Nombre"
+        />{' '}
         <br />
         <span>
-          <label htmlFor="">Edad:</label>{' '}
+          <label className="label" htmlFor="edad">
+            Edad:
+          </label>{' '}
         </span>
         {''}
         <input
           className="int"
           type="number"
-          id="Nombre"
+          id="edad"
           placeholder=" Escribe tu edad"
         />
         <br />
-        <label htmlFor="Nombre">Telefono:</label>
+        <label className="label" htmlFor="phone">
+          Telefono:
+        </label>
         <input
           className="int"
           type="number"
-          id="Nombre"
+          id="phone"
           placeholder=" Telefono"
         />
         <br />
-        <label htmlFor=""> C.I.</label>
-        <input className="int" type="text" placeholder="Escribe tu C.I." />
+        <label className="label" htmlFor="doc">
+          {' '}
+          C.I.
+        </label>
+        <input
+          className="int"
+          type="text"
+          id="doc"
+          placeholder="Escribe tu C.I."
+        />
         <button className="btn">
           {' '}
           <strong>Enviar</strong>{' '}
