@@ -308,6 +308,7 @@ export const styles = {
     width: '100%',
     height: '300px',
     border: '1px solid ',
+    borderRadius: '2em',
     textAlign: 'center',
     padding: '30px',
     display: 'flex',
@@ -322,42 +323,43 @@ export const styles = {
     color: 'rgb(39, 33, 30)',
     background: 'rgb(186, 156, 156)',
   },
-  /* Formulario2Prueba*/
-  '.Contenedor': {
-    border: '2px solid',
+  /*formemail*/
+  '.caja': {
+    width: '100%',
+    padding: '30',
     display: 'flex',
     flexDirection: 'column',
-    width: '100%',
+  },
+  '.for': {
+    margin: '0 auto',
+    width: '400px',
 
-    padding: '30px',
-    background: 'rgb(248, 212, 212)',
+    padding: '1em',
+    border: '1px solid #ccc',
+    borderRadius: '1e',
   },
-  '.title': {
+  '.lab': { padding: '5px', margin: '10' },
+  '.ent': { border: '1px solid' },
+  '.mnsj': { border: '1px solid', height: '100', width: '300px' },
+  /*radio*/
+  '.div': {
+    background: 'aqua',
     textAlign: 'center',
-    marginBottom: '12px',
-    fontFamily: 'sanserif',
+    whidh: 'auto',
+    height: '100',
+    border: '0.5px solid',
+    marginBottom: '6px',
+
+    flexDirection: 'inlineBlock',
   },
-  '.label': { fontFamily: 'cursive' },
-  '.form': {
-    width: '100%',
-    height: '400px',
-    border: '1px solid rgb(35, 34, 34) ',
-    textAlign: 'center',
-    padding: '50px',
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  '.btn': {
-    borderRadius: '30px',
-    margin: '20px 120px',
-    padding: '2',
-    color: 'rgb(39, 33, 30)',
-    background: 'rgb(186, 156, 156)',
-    fontFamily: 'roman',
+  '#tit': {
+    '&:hover': {
+      color: 'rrgb(17, 3, 3)',
+      textDecoration: 'underline',
+      fontWeight: 'bold',
+    },
+    color: 'blue',
+
     fontSize: 'large',
-  },
-  '.int': {
-    border: '1px solid',
-    textAlign: 'center',
   },
 };

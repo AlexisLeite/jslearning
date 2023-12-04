@@ -9,32 +9,34 @@ export const Formulario = () => {
       </Heading>
       <form className="formulario">
         <span>
-          <label htmlFor=" Nombre">Nombre:</label>
+          <label htmlFor="nombre">Nombre:</label>
         </span>{' '}
         {''}{' '}
         <input
+          autoComplete="off"
           className="entrada"
-          id="nombre"
           type="text"
+          id="nombre"
           placeholder="Escribe tu Nombre"
         />{' '}
         <br />
         <span>
-          <label htmlFor="">Edad:</label>{' '}
+          <label htmlFor="ledad">Edad:</label>{' '}
         </span>
         {''}{' '}
         <input
+          autoComplete="off"
           className="entrada"
           type="number"
-          id="Nombre"
+          id="ledad"
           placeholder=" Escribe tu edad"
         />
         <br />
-        <label htmlFor="Nombre">Telefono:</label>
+        <label htmlFor="ltel">Telefono:</label>
         <input
           className="entrada"
-          type="number"
-          id="Nombre"
+          type="tel"
+          id="ltel"
           placeholder=" Telefono"
         />
         <button className="boton">
