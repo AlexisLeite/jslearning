@@ -1,10 +1,11 @@
 import { Box, Heading } from '@chakra-ui/react';
-
+/* arreglo*/
 const Lista = [
   { nombre: 'Edu', apellido: 'Lacroix' },
   { nombre: 'Alexis', apellido: 'Leite' },
 ];
-
+/* Para que el arreglo lista se trasnforem en arreglo de elemento 'li' dbemos poner en el componente,
+a funcion.map*/
 export const Lista1 = () => {
   return (
     <Box className="container">
