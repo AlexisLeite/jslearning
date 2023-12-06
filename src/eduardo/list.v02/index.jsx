@@ -191,6 +191,7 @@ import { Lista2 } from './components/Lista2';
 import { Formulario } from './components/Formulario';
 import { FormMail } from './components/FormMail';
 import { OtraPrueba } from './components/Pruebas';
+import { Laca } from './components/Probandi';
 
 export const List02 = () => {
   return (
@@ -211,6 +212,7 @@ export const List02 = () => {
       <OtraPrueba />
       <Formulario />
       <FormMail />
+      <Laca />
     </Box>
   );
 };

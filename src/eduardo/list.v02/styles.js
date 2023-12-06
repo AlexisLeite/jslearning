@@ -343,23 +343,39 @@ export const styles = {
   '.mnsj': { border: '1px solid', height: '100', width: '300px' },
   /*radio*/
   '.div': {
-    background: 'aqua',
     textAlign: 'center',
+    background: 'aqua',
     whidh: 'auto',
     height: '100',
     border: '0.5px solid',
     marginBottom: '6px',
-
-    flexDirection: 'inlineBlock',
   },
-  '#tit': {
-    '&:hover': {
-      color: 'rrgb(17, 3, 3)',
-      textDecoration: 'underline',
-      fontWeight: 'bold',
-    },
-    color: 'blue',
 
+  '#tit': {
+    color: 'blue',
     fontSize: 'large',
+    textAlign: 'center',
+  },
+
+  /*chekbox*/
+
+  '.frm': {
+    background: 'rgb(185, 169, 169)',
+    textAlign: 'center',
+    padding: '2',
+    border: '0.5px solid',
+    display: 'inlineBlock',
+    marginBottom: '1',
+  },
+  '.cab': {
+    color: 'black',
+    fontSize: 'large',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  '.field': { marginBottom: '6' },
+
+  '.la': {
+    '&:hover': { color: 'rgb(24, 1, 1)', fontWeight: 'bold' },
   },
 };
