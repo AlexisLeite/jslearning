@@ -192,6 +192,8 @@ import { Formulario } from './components/Formulario';
 import { FormMail } from './components/FormMail';
 import { OtraPrueba } from './components/Pruebas';
 import { Test } from './components/Test';
+import { MyButton } from './components/MyButton';
+
 export const List02 = () => {
   return (
     <Box sx={styles}>
@@ -199,7 +201,7 @@ export const List02 = () => {
       <Heading as="h1" className="withPadding1 withHover uppercased">
         Ejercicios de la semana 2
       </Heading>
-
+      <MyButton />
       <DogsList />
       <Listaeventos />
       <ListaPartidos />

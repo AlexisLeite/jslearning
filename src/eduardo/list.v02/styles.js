@@ -317,6 +317,11 @@ export const styles = {
   '.entrada': { border: '1px solid ', textAlign: 'center' },
 
   '.boton': {
+    '&:hover': {
+      color: 'rgb(129, 86, 86)',
+      background: 'rgb(203, 197, 197)',
+      transform: ' translateY(6px)',
+    },
     borderRadius: '30px',
     margin: '20px 140px',
     padding: '2',
@@ -377,5 +382,20 @@ export const styles = {
 
   '.la': {
     '&:hover': { color: 'rgb(24, 1, 1)', fontWeight: 'bold' },
+  },
+  '.btn': {
+    '&:hover': {
+      fontWeight: 'bold',
+      transform: 'translateY(5px)',
+      background: 'rgb(202, 176, 176)',
+    },
+
+    padding: '10px 30px',
+    margin: '20px 170px',
+    border: '1px solid',
+    borderRadius: '20px',
+    display: 'flex',
+    color: 'black',
+    backgroundColor: 'rgb(187, 187, 187)',
   },
 };
