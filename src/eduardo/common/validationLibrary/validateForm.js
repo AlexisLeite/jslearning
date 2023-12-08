@@ -30,6 +30,11 @@ export function validateForm(form, definitions) {
   const errors = {};
 
   /**
+   * Vamos a mantener un objeto de valores en donde se almacenarán los distintos valores de los campos del formulario.
+   */
+  const values = {};
+
+  /**
    * Iteramos sobre cada uno de los campos que obtuvimos más arriba con el método Object.keys.
    *
    * https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/for...of
@@ -71,6 +76,8 @@ export function validateForm(form, definitions) {
       errors[field] =
         definition.regExpMessage ??
         'The introduced value does not match the regular expression';
+    } else {
+      values[field] = fieldElement.value;
     }
   }
 
@@ -97,11 +104,11 @@ export function validateForm(form, definitions) {
       fieldToFocus.focus();
     }
 
-    return errors;
+    return { errors };
   }
 
   /**
    * Se devuelve true, indicando que todo salió bien.
    */
-  return true;
+  return { values };
 }

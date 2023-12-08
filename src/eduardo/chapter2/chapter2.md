@@ -4,6 +4,8 @@
 - Introducción a las funciones
 - Comprender el manejo de estados
 - Utilización de formularios para aplicaciones de complejidad media
+- Uso de efectos
+- Inmutabilidad en los estados
   
 Cada ejercicio que hagamos, se va a hacer dentro de su propia carpeta, dentro de /src/eduardo/chapter2/exercises
 
@@ -77,3 +79,7 @@ Esta función permite manejar estados de cualquier tipo, su estructura es siempr
 
 En este caso, initialState es una entidad externa que no importa de dónde salió. Lo que importa es que refleja
 que cada estado puede tener un valor inicial.
+
+## Utilización de formularios para aplicaciones de complejidad media
+
+## Uso de efectos

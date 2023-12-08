@@ -19,6 +19,7 @@ import {
 import { useState } from 'react';
 import { validateForm } from '../../../common/validationLibrary/validateForm';
 import { FieldError } from '../../../common/FieldError';
+import { messagesStore } from '../../../common/storage/messagesStore';
 
 const demoForm1Styles = {
   '.chakra-modal__body': {
@@ -40,7 +41,13 @@ export const ContactForm = () => {
   return (
     <>
       <Button onClick={onOpen}>Contact us</Button>
-      <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal
+        isOpen={isOpen}
+        onClose={() => {
+          onClose();
+          setSuccess(false);
+        }}
+      >
         <ModalOverlay />
         <Box
           sx={demoForm1Styles}
@@ -63,12 +70,13 @@ export const ContactForm = () => {
               },
             });
 
-            if (result !== true) {
-              setErrors(result);
+            if (result.errors) {
+              setErrors(result.errors);
             } else {
               setErrors({});
               ev.target.reset();
               setSuccess(true);
+              messagesStore.addMessage(result.values);
             }
           }}
         >
