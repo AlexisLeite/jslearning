@@ -2,15 +2,6 @@ body {
   background: #ccc !important
 }
 
-#MainContainer {
-  background: white;
-  width: 550px;
-  margin: 24px auto;
-  border: 1px solid #999;
-  box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
-  padding: 0
-}
-
 ul {
   margin-left: 20px
 }

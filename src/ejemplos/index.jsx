@@ -1,6 +1,6 @@
 import { Box, Heading, Link } from '@chakra-ui/react';
-import { useCurrentPage } from './useCurrentPage';
 import { Listado } from './Listado';
+import { useCurrentPage } from '../eduardo/common/useCurrentPage';
 
 export const Ejemplos = () => {
   const route = useCurrentPage({

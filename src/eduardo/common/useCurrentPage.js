@@ -5,12 +5,16 @@ export function useCurrentPage(routes) {
 
   useEffect(() => {
     const r = Object.entries(routes);
+    let match = null;
+
     for (let i = 0; i < r.length; i++) {
       if (window.location.href.match(r[i][1])) {
-        setRoute(r[i][0]);
+        match = r[i][0];
         break;
       }
     }
+
+    setRoute(match ?? 'default');
   }, [routes]);
 
   return route;
