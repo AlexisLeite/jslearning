@@ -8,6 +8,11 @@ export const Pages = () => {
           Incoming messages
         </Link>
       </li>
+      <li>
+        <Link className="button white" href="/eduardo2/products">
+          Products
+        </Link>
+      </li>
     </ul>
   );
 };

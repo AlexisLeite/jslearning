@@ -6,6 +6,7 @@
 - Utilización de formularios para aplicaciones de complejidad media
 - Uso de efectos
 - Inmutabilidad en los estados
+- Ejercicios
   
 Cada ejercicio que hagamos, se va a hacer dentro de su propia carpeta, dentro de /src/eduardo/chapter2/exercises
 
@@ -83,3 +84,11 @@ que cada estado puede tener un valor inicial.
 ## Utilización de formularios para aplicaciones de complejidad media
 
 ## Uso de efectos
+
+## Ejercicios
+
+- La página Home debe quedar HERMOSA
+- La página Incoming messages debe quedar HERMOSA
+- La página Products debe quedar HERMOSA
+
+- En products completar las tareas que están escritas
