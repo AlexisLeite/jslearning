@@ -7,7 +7,7 @@
 - Uso de efectos
 - Inmutabilidad en los estados
 - Ejercicios
-  
+
 Cada ejercicio que hagamos, se va a hacer dentro de su propia carpeta, dentro de /src/eduardo/chapter2/exercises
 
 ## Estética básica en formularios:
@@ -24,6 +24,7 @@ de dar despacios correctamente a los elementos para que no queden demasiado apre
 de la librería como se puede ver en DemoForm1.
 
 ## Introducción a las funciones
+
 Las funciones en programación son muy importantes, son la base del trabajo en conjunto con otros elementos igual
 de importantes como ser las variables, las clases o los módulos. Leer el siguiente documento:
 
@@ -36,7 +37,9 @@ Una función es un objeto que es invocado en el código y recibe (o no) parámet
 y a cambio puede devolver (o no) valores de salida. Un ejemplo muy tonto es la siguiente función:
 
 ```ts
-function sum(a, b) { return a + b; }
+function sum(a, b) {
+  return a + b;
+}
 ```
 
 Esta función recibe los parámetros a y b, y devuelve la suma de ellos. Es importante empezar a observar que este
@@ -47,8 +50,8 @@ llevar a cabo controles:
 
 ```ts
 function sum(a, b) {
-  if(typeof a !== 'number' || typeof b !== 'number')
-    throw new Error("The sum parameters must be of type number");
+  if (typeof a !== 'number' || typeof b !== 'number')
+    throw new Error('The sum parameters must be of type number');
   return a + b;
 }
 ```
@@ -67,7 +70,7 @@ de las tres líneas que componen el if, el throw y el return.
 
 ## Comprender el manejo de estados
 
-Los estados de un componente son los que permiten controlar qué se muestra o de qué forma se muestra cada 
+Los estados de un componente son los que permiten controlar qué se muestra o de qué forma se muestra cada
 parte de un componente. En react, el manejo de estados se hace básciamente por medio del método useState:
 
 https://react.dev/reference/react/useState
@@ -75,7 +78,7 @@ https://react.dev/reference/react/useState
 Esta función permite manejar estados de cualquier tipo, su estructura es siempre la misma:
 
 ```ts
-  const [state, setState] = useState(initialState);
+const [state, setState] = useState(initialState);
 ```
 
 En este caso, initialState es una entidad externa que no importa de dónde salió. Lo que importa es que refleja

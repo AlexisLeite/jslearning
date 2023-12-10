@@ -27,7 +27,9 @@ export const IncomingMessages = () => {
 
   return (
     <Box sx={incomingMessagesStyles}>
-      <Heading as="h2">Messages</Heading>
+      <Heading className="h2" as="h2">
+        Mensajes
+      </Heading>
       <table className="messagesList">
         <tbody>
           {messages.map(current => {
@@ -35,7 +37,9 @@ export const IncomingMessages = () => {
           })}
         </tbody>
       </table>
-      <Heading as="h2">Last 5 transmitters</Heading>
+      <Heading className="h2" as="h2">
+        Ultimos 5 mensajes
+      </Heading>
       <Box className="messagesList__lastTransmitters">
         {emitters.map(current => (
           <Button
@@ -48,7 +52,9 @@ export const IncomingMessages = () => {
           </Button>
         ))}
       </Box>
-      <Heading as="h2">Messages from {from}</Heading>
+      <Heading className="h2" as="h2">
+        Messages from {from}
+      </Heading>
       <table className="messagesList">
         <tbody>
           {messagesFrom.map(current => {

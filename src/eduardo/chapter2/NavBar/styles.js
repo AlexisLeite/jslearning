@@ -3,7 +3,7 @@ export const navBarStyles = {
   display: 'flex',
   justifyContent: 'space-between',
 
-  background: 'white',
+  background: 'rgb(201, 194, 194)',
   borderBottom: '1px solid',
   borderBottomColor: '#ccc',
 
@@ -15,6 +15,7 @@ export const navBarStyles = {
 
   '.Logo': {
     p: 4,
+    color: 'blue',
   },
 
   '.Pages': {
@@ -31,8 +32,13 @@ export const navBarStyles = {
       height: '100%',
     },
   },
+  '.buttonwhite': {
+    color: 'blue',
+    padding: '6px 5px',
+    margin: '4px 2px',
+    display: 'flex',
 
-  '.rightButtons': {
-    p: 4,
+    alignItems: 'center',
   },
+  '.rightButtons': { p: 4 },
 };
