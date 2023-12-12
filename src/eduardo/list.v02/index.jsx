@@ -175,7 +175,7 @@ Antes de empezar a trabajar cada día deberíamos ejecutar el comando **git pull
 
  */
 
-import { Box, Heading } from '@chakra-ui/react';
+import { Box, Button, Heading } from '@chakra-ui/react';
 
 import { styles } from './styles';
 import { DogsList } from './components/ListaPerros/DogsList';
@@ -193,10 +193,14 @@ import { FormMail } from './components/FormMail';
 import { OtraPrueba } from './components/Pruebas';
 import { Test } from './components/Test';
 import { MyButton } from './components/MyButton';
+import { ChakraProvider } from '@chakra-ui/react';
+import { Maraca } from './components/app';
+import { Counter } from './components/Estados/Counter';
 
 export const List02 = () => {
   return (
     <Box sx={styles}>
+      <Counter />
       <Tarjeta />
       <Heading as="h1" className="withPadding1 withHover uppercased">
         Ejercicios de la semana 2
@@ -215,6 +219,9 @@ export const List02 = () => {
       <Formulario />
       <FormMail />
       <Test />
+      <ChakraProvider />
+      <Maraca />
+      <Button />
     </Box>
   );
 };
