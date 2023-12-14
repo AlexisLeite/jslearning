@@ -13,6 +13,21 @@ export const Pages = () => {
           Products
         </Link>
       </li>
+      <li>
+        <Link className="buttonwhite" href="/eduardo2/counter">
+          Counter
+        </Link>
+      </li>
+      <li>
+        <Link className="buttonwhite" href="/eduardo2/todo">
+          Todo
+        </Link>
+      </li>
+      <li>
+        <Link className="buttonwhite" href="/eduardo2/timer">
+          Timer
+        </Link>
+      </li>
     </ul>
   );
 };
