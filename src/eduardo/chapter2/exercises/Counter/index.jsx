@@ -62,6 +62,12 @@ export const Counter = () => {
       >
         + 10
       </Button>
+      <Button onClick={() => setCount(current => (current = 0))}>0</Button>
+
+      <Button onClick={() => setCount(current => (current = 100))}>
+        {' '}
+        100{' '}
+      </Button>
     </Box>
   );
 };

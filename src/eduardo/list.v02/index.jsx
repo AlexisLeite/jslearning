@@ -197,6 +197,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { Maraca } from './components/app';
 import { Counter } from './components/Estados/Counter';
 import { Card } from './components/Card';
+import { Contador } from './components/Contador';
 
 export const List02 = () => {
   return (
@@ -225,6 +226,7 @@ export const List02 = () => {
       <ChakraProvider />
       <Maraca />
       <Button />
+      <Contador />
     </Box>
   );
 };
