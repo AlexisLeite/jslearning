@@ -1,7 +1,8 @@
+import { Button } from '@chakra-ui/react';
 import { useState } from 'react';
 
 export const Counter = () => {
-  const [Counter, setCounter] = useState(5);
+  const [Counter, setCounter] = useState(0);
 
   /*estado en que quermos que empiece a contar*/
   return (
@@ -9,9 +10,22 @@ export const Counter = () => {
     contanod de a 5 numeros, el que setea el estado es setState(al
       setstate* por convencion le ponemos el mismo nombre que la variable
       con el set por delante*/
-    <button className="btn" onClick={() => setCounter(Counter + 5)}>
-      {' '}
-      {Counter} Contando
-    </button>
+    <>
+      <Button
+        className="btn"
+        onClick={() => setCounter(current => current + 5)}
+      >
+        {' '}
+        {Counter} Haz Click
+      </Button>
+
+      <Button
+        className="btn"
+        onClick={() => setCounter(current => (current = 0))}
+      >
+        {' '}
+        Volver a 0
+      </Button>
+    </>
   );
 };

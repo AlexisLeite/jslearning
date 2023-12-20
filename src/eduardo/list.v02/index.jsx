@@ -198,13 +198,14 @@ import { Maraca } from './components/app';
 import { Counter } from './components/Estados/Counter';
 import { Card } from './components/Card';
 import { Contador } from './components/Contador';
+import { Calculadora } from './components/Calculadora';
 
 export const List02 = () => {
   return (
     <Box sx={styles}>
+      <Calculadora />
       <Card />
       <Counter />
-
       <Tarjeta titulo="Meti una Props" subtitulo="Ypa" />
       <Heading as="h1" className="withPadding1 withHover uppercased">
         Ejercicios de la semana 2
