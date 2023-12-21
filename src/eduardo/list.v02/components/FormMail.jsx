@@ -6,19 +6,26 @@ export const FormMail = () => {
       <form className="for">
         <label className="lab" htmlFor="name">
           Nombre:
+          <input className="ent" type="text" id="name" placeholder="Nombre" />
         </label>
-        <input className="ent" type="text" id="name" placeholder="Nombre" />
         <label className="lab" htmlFor="mail">
           <br /> Correo electronico:
+          <input className="ent" type="email" id="mail" placeholder=" Correo" />
         </label>
-        <input className="ent" type="email" id="mail" placeholder=" Correo" />
         <br /> <br />
         <label className="lab" htmlFor="msg">
           Mensaje:
+          <input
+            className="mnsj"
+            type="textTarea"
+            id="msg"
+            autocomplete="off"
+          />{' '}
         </label>
-        <input className="mnsj" type="textTarea" id="msg" autocomplete="off" />{' '}
-        <br /> <br />
-        <input type="submit" />
+        <label>
+          <br /> <br />
+          <input type="submit" />
+        </label>
       </form>
     </Box>
   );

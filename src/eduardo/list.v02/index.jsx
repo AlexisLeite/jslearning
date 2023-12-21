@@ -198,12 +198,11 @@ import { Maraca } from './components/app';
 import { Counter } from './components/Estados/Counter';
 import { Card } from './components/Card';
 import { Contador } from './components/Contador';
-import { Calculadora } from './components/Calculadora';
+import { Pruebas1 } from './components/Prueba1';
 
 export const List02 = () => {
   return (
     <Box sx={styles}>
-      <Calculadora />
       <Card />
       <Counter />
       <Tarjeta titulo="Meti una Props" subtitulo="Ypa" />
@@ -228,6 +227,7 @@ export const List02 = () => {
       <Maraca />
       <Button />
       <Contador />
+      <Pruebas1 />
     </Box>
   );
 };

@@ -1,5 +1,6 @@
-import { Heading } from '@chakra-ui/react';
-const MyButton = () => (
+import { Box, Heading } from '@chakra-ui/react';
+
+const MyButton = () => {
   <button
     style={{
       color: 'black',
@@ -10,18 +11,17 @@ const MyButton = () => (
       margin: '20px 200px',
     }}
   >
-    {' '}
     Boton
-  </button>
-);
+  </button>;
+};
 
 export const Test = () => {
   return (
-    <div>
+    <Box>
       <Heading style={{ textAlign: 'center', backgroundColor: 'aqua' }}>
         Click en el Boton
       </Heading>
       <MyButton />
-    </div>
+    </Box>
   );
 };
